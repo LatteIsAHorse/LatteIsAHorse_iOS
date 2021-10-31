@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DDED4B6272EDA540064118D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4B5272EDA540064118D /* AppDelegate.swift */; };
+		3DDED4B8272EDA540064118D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4B7272EDA540064118D /* SceneDelegate.swift */; };
+		3DDED4BA272EDA540064118D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4B9272EDA540064118D /* ViewController.swift */; };
+		3DDED4BD272EDA540064118D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDED4BB272EDA540064118D /* Main.storyboard */; };
+		3DDED4BF272EDA560064118D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDED4BE272EDA560064118D /* Assets.xcassets */; };
+		3DDED4C2272EDA560064118D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDED4C0272EDA560064118D /* LaunchScreen.storyboard */; };
+		3DDED4CD272EDA560064118D /* LatteIsHorseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4CC272EDA560064118D /* LatteIsHorseTests.swift */; };
+		3DDED4D7272EDA560064118D /* LatteIsHorseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4D6272EDA560064118D /* LatteIsHorseUITests.swift */; };
+		3DDED4D9272EDA560064118D /* LatteIsHorseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4D8272EDA560064118D /* LatteIsHorseUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DDED4C9272EDA560064118D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DDED4AA272EDA540064118D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DDED4B1272EDA540064118D;
+			remoteInfo = LatteIsHorse;
+		};
+		3DDED4D3272EDA560064118D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DDED4AA272EDA540064118D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DDED4B1272EDA540064118D;
+			remoteInfo = LatteIsHorse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DDED4B2272EDA540064118D /* LatteIsHorse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatteIsHorse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDED4B5272EDA540064118D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DDED4B7272EDA540064118D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DDED4B9272EDA540064118D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DDED4BC272EDA540064118D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DDED4BE272EDA560064118D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DDED4C1272EDA560064118D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DDED4C3272EDA560064118D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DDED4C8272EDA560064118D /* LatteIsHorseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LatteIsHorseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDED4CC272EDA560064118D /* LatteIsHorseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatteIsHorseTests.swift; sourceTree = "<group>"; };
+		3DDED4D2272EDA560064118D /* LatteIsHorseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LatteIsHorseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDED4D6272EDA560064118D /* LatteIsHorseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatteIsHorseUITests.swift; sourceTree = "<group>"; };
+		3DDED4D8272EDA560064118D /* LatteIsHorseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatteIsHorseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DDED4AF272EDA540064118D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDED4C5272EDA560064118D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDED4CF272EDA560064118D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DDED4A9272EDA540064118D = {
+			isa = PBXGroup;
+			children = (
+				3DDED4B4272EDA540064118D /* LatteIsHorse */,
+				3DDED4CB272EDA560064118D /* LatteIsHorseTests */,
+				3DDED4D5272EDA560064118D /* LatteIsHorseUITests */,
+				3DDED4B3272EDA540064118D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DDED4B3272EDA540064118D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DDED4B2272EDA540064118D /* LatteIsHorse.app */,
+				3DDED4C8272EDA560064118D /* LatteIsHorseTests.xctest */,
+				3DDED4D2272EDA560064118D /* LatteIsHorseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DDED4B4272EDA540064118D /* LatteIsHorse */ = {
+			isa = PBXGroup;
+			children = (
+				3DDED4B5272EDA540064118D /* AppDelegate.swift */,
+				3DDED4B7272EDA540064118D /* SceneDelegate.swift */,
+				3DDED4B9272EDA540064118D /* ViewController.swift */,
+				3DDED4BB272EDA540064118D /* Main.storyboard */,
+				3DDED4BE272EDA560064118D /* Assets.xcassets */,
+				3DDED4C0272EDA560064118D /* LaunchScreen.storyboard */,
+				3DDED4C3272EDA560064118D /* Info.plist */,
+			);
+			path = LatteIsHorse;
+			sourceTree = "<group>";
+		};
+		3DDED4CB272EDA560064118D /* LatteIsHorseTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DDED4CC272EDA560064118D /* LatteIsHorseTests.swift */,
+			);
+			path = LatteIsHorseTests;
+			sourceTree = "<group>";
+		};
+		3DDED4D5272EDA560064118D /* LatteIsHorseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DDED4D6272EDA560064118D /* LatteIsHorseUITests.swift */,
+				3DDED4D8272EDA560064118D /* LatteIsHorseUITestsLaunchTests.swift */,
+			);
+			path = LatteIsHorseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DDED4B1272EDA540064118D /* LatteIsHorse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDED4DC272EDA560064118D /* Build configuration list for PBXNativeTarget "LatteIsHorse" */;
+			buildPhases = (
+				3DDED4AE272EDA540064118D /* Sources */,
+				3DDED4AF272EDA540064118D /* Frameworks */,
+				3DDED4B0272EDA540064118D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LatteIsHorse;
+			productName = LatteIsHorse;
+			productReference = 3DDED4B2272EDA540064118D /* LatteIsHorse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DDED4C7272EDA560064118D /* LatteIsHorseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDED4DF272EDA560064118D /* Build configuration list for PBXNativeTarget "LatteIsHorseTests" */;
+			buildPhases = (
+				3DDED4C4272EDA560064118D /* Sources */,
+				3DDED4C5272EDA560064118D /* Frameworks */,
+				3DDED4C6272EDA560064118D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DDED4CA272EDA560064118D /* PBXTargetDependency */,
+			);
+			name = LatteIsHorseTests;
+			productName = LatteIsHorseTests;
+			productReference = 3DDED4C8272EDA560064118D /* LatteIsHorseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DDED4D1272EDA560064118D /* LatteIsHorseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDED4E2272EDA560064118D /* Build configuration list for PBXNativeTarget "LatteIsHorseUITests" */;
+			buildPhases = (
+				3DDED4CE272EDA560064118D /* Sources */,
+				3DDED4CF272EDA560064118D /* Frameworks */,
+				3DDED4D0272EDA560064118D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DDED4D4272EDA560064118D /* PBXTargetDependency */,
+			);
+			name = LatteIsHorseUITests;
+			productName = LatteIsHorseUITests;
+			productReference = 3DDED4D2272EDA560064118D /* LatteIsHorseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DDED4AA272EDA540064118D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					3DDED4B1272EDA540064118D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					3DDED4C7272EDA560064118D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 3DDED4B1272EDA540064118D;
+					};
+					3DDED4D1272EDA560064118D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 3DDED4B1272EDA540064118D;
+					};
+				};
+			};
+			buildConfigurationList = 3DDED4AD272EDA540064118D /* Build configuration list for PBXProject "LatteIsHorse" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DDED4A9272EDA540064118D;
+			productRefGroup = 3DDED4B3272EDA540064118D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DDED4B1272EDA540064118D /* LatteIsHorse */,
+				3DDED4C7272EDA560064118D /* LatteIsHorseTests */,
+				3DDED4D1272EDA560064118D /* LatteIsHorseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DDED4B0272EDA540064118D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDED4C2272EDA560064118D /* LaunchScreen.storyboard in Resources */,
+				3DDED4BF272EDA560064118D /* Assets.xcassets in Resources */,
+				3DDED4BD272EDA540064118D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDED4C6272EDA560064118D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDED4D0272EDA560064118D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DDED4AE272EDA540064118D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDED4BA272EDA540064118D /* ViewController.swift in Sources */,
+				3DDED4B6272EDA540064118D /* AppDelegate.swift in Sources */,
+				3DDED4B8272EDA540064118D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDED4C4272EDA560064118D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDED4CD272EDA560064118D /* LatteIsHorseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDED4CE272EDA560064118D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDED4D7272EDA560064118D /* LatteIsHorseUITests.swift in Sources */,
+				3DDED4D9272EDA560064118D /* LatteIsHorseUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DDED4CA272EDA560064118D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DDED4B1272EDA540064118D /* LatteIsHorse */;
+			targetProxy = 3DDED4C9272EDA560064118D /* PBXContainerItemProxy */;
+		};
+		3DDED4D4272EDA560064118D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DDED4B1272EDA540064118D /* LatteIsHorse */;
+			targetProxy = 3DDED4D3272EDA560064118D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DDED4BB272EDA540064118D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DDED4BC272EDA540064118D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DDED4C0272EDA560064118D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DDED4C1272EDA560064118D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DDED4DA272EDA560064118D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DDED4DB272EDA560064118D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DDED4DD272EDA560064118D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LatteIsHorse/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.LatteIsHorse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DDED4DE272EDA560064118D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LatteIsHorse/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.LatteIsHorse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DDED4E0272EDA560064118D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.LatteIsHorseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LatteIsHorse.app/LatteIsHorse";
+			};
+			name = Debug;
+		};
+		3DDED4E1272EDA560064118D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.LatteIsHorseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LatteIsHorse.app/LatteIsHorse";
+			};
+			name = Release;
+		};
+		3DDED4E3272EDA560064118D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.LatteIsHorseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LatteIsHorse;
+			};
+			name = Debug;
+		};
+		3DDED4E4272EDA560064118D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.LatteIsHorseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LatteIsHorse;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DDED4AD272EDA540064118D /* Build configuration list for PBXProject "LatteIsHorse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDED4DA272EDA560064118D /* Debug */,
+				3DDED4DB272EDA560064118D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDED4DC272EDA560064118D /* Build configuration list for PBXNativeTarget "LatteIsHorse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDED4DD272EDA560064118D /* Debug */,
+				3DDED4DE272EDA560064118D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDED4DF272EDA560064118D /* Build configuration list for PBXNativeTarget "LatteIsHorseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDED4E0272EDA560064118D /* Debug */,
+				3DDED4E1272EDA560064118D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDED4E2272EDA560064118D /* Build configuration list for PBXNativeTarget "LatteIsHorseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDED4E3272EDA560064118D /* Debug */,
+				3DDED4E4272EDA560064118D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DDED4AA272EDA540064118D /* Project object */;
+}
