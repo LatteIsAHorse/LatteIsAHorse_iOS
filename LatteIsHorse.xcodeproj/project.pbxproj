@@ -16,6 +16,9 @@
 		3DDED4CD272EDA560064118D /* LatteIsHorseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4CC272EDA560064118D /* LatteIsHorseTests.swift */; };
 		3DDED4D7272EDA560064118D /* LatteIsHorseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4D6272EDA560064118D /* LatteIsHorseUITests.swift */; };
 		3DDED4D9272EDA560064118D /* LatteIsHorseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4D8272EDA560064118D /* LatteIsHorseUITestsLaunchTests.swift */; };
+		7ADBA2D3D7F46B052285B5DE /* Pods_LatteIsHorse_LatteIsHorseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03720F53910A73A859F6697A /* Pods_LatteIsHorse_LatteIsHorseUITests.framework */; };
+		A20A4CAFCCD332DB6D823A2C /* Pods_LatteIsHorse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6EA7E85F0FED6398E012E4 /* Pods_LatteIsHorse.framework */; };
+		EA5F0CFA58EEED8B525D8703 /* Pods_LatteIsHorseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528245023081E81CEFCAE4BE /* Pods_LatteIsHorseTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03720F53910A73A859F6697A /* Pods_LatteIsHorse_LatteIsHorseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LatteIsHorse_LatteIsHorseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12A011F2CE1C6031DF4F4DBC /* Pods-LatteIsHorseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatteIsHorseTests.debug.xcconfig"; path = "Target Support Files/Pods-LatteIsHorseTests/Pods-LatteIsHorseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B9141B1E0746FE9F84B9765 /* Pods-LatteIsHorse-LatteIsHorseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatteIsHorse-LatteIsHorseUITests.release.xcconfig"; path = "Target Support Files/Pods-LatteIsHorse-LatteIsHorseUITests/Pods-LatteIsHorse-LatteIsHorseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1FE3F1D4183B8926854E6266 /* Pods-LatteIsHorse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatteIsHorse.release.xcconfig"; path = "Target Support Files/Pods-LatteIsHorse/Pods-LatteIsHorse.release.xcconfig"; sourceTree = "<group>"; };
+		3D6EA7E85F0FED6398E012E4 /* Pods_LatteIsHorse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LatteIsHorse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDED4B2272EDA540064118D /* LatteIsHorse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatteIsHorse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDED4B5272EDA540064118D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DDED4B7272EDA540064118D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		3DDED4D2272EDA560064118D /* LatteIsHorseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LatteIsHorseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDED4D6272EDA560064118D /* LatteIsHorseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatteIsHorseUITests.swift; sourceTree = "<group>"; };
 		3DDED4D8272EDA560064118D /* LatteIsHorseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatteIsHorseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		528245023081E81CEFCAE4BE /* Pods_LatteIsHorseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LatteIsHorseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB525C7CFBCB1F9E9EC2B89 /* Pods-LatteIsHorse-LatteIsHorseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatteIsHorse-LatteIsHorseUITests.debug.xcconfig"; path = "Target Support Files/Pods-LatteIsHorse-LatteIsHorseUITests/Pods-LatteIsHorse-LatteIsHorseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A274F11E78945E7799D9A276 /* Pods-LatteIsHorse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatteIsHorse.debug.xcconfig"; path = "Target Support Files/Pods-LatteIsHorse/Pods-LatteIsHorse.debug.xcconfig"; sourceTree = "<group>"; };
+		E0FACF1A4E1696B010A5DD64 /* Pods-LatteIsHorseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatteIsHorseTests.release.xcconfig"; path = "Target Support Files/Pods-LatteIsHorseTests/Pods-LatteIsHorseTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20A4CAFCCD332DB6D823A2C /* Pods_LatteIsHorse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5F0CFA58EEED8B525D8703 /* Pods_LatteIsHorseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADBA2D3D7F46B052285B5DE /* Pods_LatteIsHorse_LatteIsHorseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				3DDED4CB272EDA560064118D /* LatteIsHorseTests */,
 				3DDED4D5272EDA560064118D /* LatteIsHorseUITests */,
 				3DDED4B3272EDA540064118D /* Products */,
+				8D2C4E9F964BC8B55012BA57 /* Pods */,
+				6D4DB9C43B8D50E239859380 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,30 @@
 			path = LatteIsHorseUITests;
 			sourceTree = "<group>";
 		};
+		6D4DB9C43B8D50E239859380 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D6EA7E85F0FED6398E012E4 /* Pods_LatteIsHorse.framework */,
+				03720F53910A73A859F6697A /* Pods_LatteIsHorse_LatteIsHorseUITests.framework */,
+				528245023081E81CEFCAE4BE /* Pods_LatteIsHorseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D2C4E9F964BC8B55012BA57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A274F11E78945E7799D9A276 /* Pods-LatteIsHorse.debug.xcconfig */,
+				1FE3F1D4183B8926854E6266 /* Pods-LatteIsHorse.release.xcconfig */,
+				9CB525C7CFBCB1F9E9EC2B89 /* Pods-LatteIsHorse-LatteIsHorseUITests.debug.xcconfig */,
+				1B9141B1E0746FE9F84B9765 /* Pods-LatteIsHorse-LatteIsHorseUITests.release.xcconfig */,
+				12A011F2CE1C6031DF4F4DBC /* Pods-LatteIsHorseTests.debug.xcconfig */,
+				E0FACF1A4E1696B010A5DD64 /* Pods-LatteIsHorseTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DDED4DC272EDA560064118D /* Build configuration list for PBXNativeTarget "LatteIsHorse" */;
 			buildPhases = (
+				F2C31877D4AC56C2E500D75F /* [CP] Check Pods Manifest.lock */,
 				3DDED4AE272EDA540064118D /* Sources */,
 				3DDED4AF272EDA540064118D /* Frameworks */,
 				3DDED4B0272EDA540064118D /* Resources */,
+				02AB4995A235D97CAEEA27DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DDED4DF272EDA560064118D /* Build configuration list for PBXNativeTarget "LatteIsHorseTests" */;
 			buildPhases = (
+				D28570A1C87A530F56A18C70 /* [CP] Check Pods Manifest.lock */,
 				3DDED4C4272EDA560064118D /* Sources */,
 				3DDED4C5272EDA560064118D /* Frameworks */,
 				3DDED4C6272EDA560064118D /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DDED4E2272EDA560064118D /* Build configuration list for PBXNativeTarget "LatteIsHorseUITests" */;
 			buildPhases = (
+				77E39B966AEEA5DA28930DE3 /* [CP] Check Pods Manifest.lock */,
 				3DDED4CE272EDA560064118D /* Sources */,
 				3DDED4CF272EDA560064118D /* Frameworks */,
 				3DDED4D0272EDA560064118D /* Resources */,
+				ABB8533B5D126C8CE58E79E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02AB4995A235D97CAEEA27DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LatteIsHorse/Pods-LatteIsHorse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LatteIsHorse/Pods-LatteIsHorse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LatteIsHorse/Pods-LatteIsHorse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77E39B966AEEA5DA28930DE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LatteIsHorse-LatteIsHorseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB8533B5D126C8CE58E79E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LatteIsHorse-LatteIsHorseUITests/Pods-LatteIsHorse-LatteIsHorseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LatteIsHorse-LatteIsHorseUITests/Pods-LatteIsHorse-LatteIsHorseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LatteIsHorse-LatteIsHorseUITests/Pods-LatteIsHorse-LatteIsHorseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28570A1C87A530F56A18C70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LatteIsHorseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2C31877D4AC56C2E500D75F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LatteIsHorse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DDED4AE272EDA540064118D /* Sources */ = {
@@ -434,6 +583,7 @@
 		};
 		3DDED4DD272EDA560064118D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A274F11E78945E7799D9A276 /* Pods-LatteIsHorse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +612,7 @@
 		};
 		3DDED4DE272EDA560064118D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FE3F1D4183B8926854E6266 /* Pods-LatteIsHorse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +641,7 @@
 		};
 		3DDED4E0272EDA560064118D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A011F2CE1C6031DF4F4DBC /* Pods-LatteIsHorseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +667,7 @@
 		};
 		3DDED4E1272EDA560064118D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FACF1A4E1696B010A5DD64 /* Pods-LatteIsHorseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +693,7 @@
 		};
 		3DDED4E3272EDA560064118D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CB525C7CFBCB1F9E9EC2B89 /* Pods-LatteIsHorse-LatteIsHorseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +717,7 @@
 		};
 		3DDED4E4272EDA560064118D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9141B1E0746FE9F84B9765 /* Pods-LatteIsHorse-LatteIsHorseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
