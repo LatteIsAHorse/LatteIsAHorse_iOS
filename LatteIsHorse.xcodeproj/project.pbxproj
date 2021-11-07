@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D90826A273792A500049E0C /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D908261273792A400049E0C /* Pretendard-ExtraLight.otf */; };
+		3D90826B273792A500049E0C /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D908262273792A400049E0C /* Pretendard-SemiBold.otf */; };
+		3D90826C273792A500049E0C /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D908263273792A400049E0C /* Pretendard-Black.otf */; };
+		3D90826D273792A500049E0C /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D908264273792A500049E0C /* Pretendard-Medium.otf */; };
+		3D90826E273792A500049E0C /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D908265273792A500049E0C /* Pretendard-Light.otf */; };
+		3D90826F273792A500049E0C /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D908266273792A500049E0C /* Pretendard-Thin.otf */; };
+		3D908270273792A500049E0C /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D908267273792A500049E0C /* Pretendard-Regular.otf */; };
+		3D908271273792A500049E0C /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D908268273792A500049E0C /* Pretendard-ExtraBold.otf */; };
+		3D908272273792A500049E0C /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D908269273792A500049E0C /* Pretendard-Bold.otf */; };
+		3D908276273793D400049E0C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D908275273793D400049E0C /* Color.swift */; };
+		3D908278273793E200049E0C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D908277273793E200049E0C /* UIFont.swift */; };
+		3D90827A273799E200049E0C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D908279273799E200049E0C /* Constant.swift */; };
+		3D90827F27379A5700049E0C /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90827E27379A5700049E0C /* BaseTabBarController.swift */; };
+		3D90828127379A6500049E0C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90828027379A6500049E0C /* BaseViewController.swift */; };
+		3D90828327379A7700049E0C /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90828227379A7700049E0C /* IndicatorView.swift */; };
+		3D90828527379A8900049E0C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90828427379A8900049E0C /* Device.swift */; };
+		3D90828727379AB900049E0C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90828627379AB900049E0C /* UIViewController.swift */; };
+		3D90828927379AC900049E0C /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90828827379AC900049E0C /* UINavigationBar.swift */; };
+		3D90828E27379BAA00049E0C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90828D27379BAA00049E0C /* LoginViewController.swift */; };
+		3D90829027379BC300049E0C /* MainQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90828F27379BC300049E0C /* MainQuizViewController.swift */; };
+		3D9082932737B4AD00049E0C /* LeftImgRightLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9082922737B4AD00049E0C /* LeftImgRightLabelView.swift */; };
+		3D9082962737B5D900049E0C /* MainQuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9082952737B5D900049E0C /* MainQuizCollectionViewCell.swift */; };
+		3D9082992737D94B00049E0C /* SolveQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9082982737D94B00049E0C /* SolveQuizViewController.swift */; };
+		3D90829B2737DAE100049E0C /* QuizAnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90829A2737DAE100049E0C /* QuizAnsView.swift */; };
+		3D90829D2737F06A00049E0C /* QuizPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90829C2737F06A00049E0C /* QuizPopUpView.swift */; };
+		3D90829F2737F40200049E0C /* PopUpDarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90829E2737F40200049E0C /* PopUpDarkViewController.swift */; };
 		3DDED4B6272EDA540064118D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4B5272EDA540064118D /* AppDelegate.swift */; };
 		3DDED4B8272EDA540064118D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4B7272EDA540064118D /* SceneDelegate.swift */; };
 		3DDED4BA272EDA540064118D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4B9272EDA540064118D /* ViewController.swift */; };
@@ -44,6 +70,32 @@
 		1B9141B1E0746FE9F84B9765 /* Pods-LatteIsHorse-LatteIsHorseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatteIsHorse-LatteIsHorseUITests.release.xcconfig"; path = "Target Support Files/Pods-LatteIsHorse-LatteIsHorseUITests/Pods-LatteIsHorse-LatteIsHorseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1FE3F1D4183B8926854E6266 /* Pods-LatteIsHorse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatteIsHorse.release.xcconfig"; path = "Target Support Files/Pods-LatteIsHorse/Pods-LatteIsHorse.release.xcconfig"; sourceTree = "<group>"; };
 		3D6EA7E85F0FED6398E012E4 /* Pods_LatteIsHorse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LatteIsHorse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D908261273792A400049E0C /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		3D908262273792A400049E0C /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		3D908263273792A400049E0C /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		3D908264273792A500049E0C /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		3D908265273792A500049E0C /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		3D908266273792A500049E0C /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		3D908267273792A500049E0C /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		3D908268273792A500049E0C /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		3D908269273792A500049E0C /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		3D908275273793D400049E0C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		3D908277273793E200049E0C /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		3D908279273799E200049E0C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3D90827E27379A5700049E0C /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		3D90828027379A6500049E0C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3D90828227379A7700049E0C /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		3D90828427379A8900049E0C /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		3D90828627379AB900049E0C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		3D90828827379AC900049E0C /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		3D90828D27379BAA00049E0C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3D90828F27379BC300049E0C /* MainQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQuizViewController.swift; sourceTree = "<group>"; };
+		3D9082922737B4AD00049E0C /* LeftImgRightLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftImgRightLabelView.swift; sourceTree = "<group>"; };
+		3D9082952737B5D900049E0C /* MainQuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D9082982737D94B00049E0C /* SolveQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuizViewController.swift; sourceTree = "<group>"; };
+		3D90829A2737DAE100049E0C /* QuizAnsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAnsView.swift; sourceTree = "<group>"; };
+		3D90829C2737F06A00049E0C /* QuizPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPopUpView.swift; sourceTree = "<group>"; };
+		3D90829E2737F40200049E0C /* PopUpDarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDarkViewController.swift; sourceTree = "<group>"; };
 		3DDED4B2272EDA540064118D /* LatteIsHorse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatteIsHorse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDED4B5272EDA540064118D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DDED4B7272EDA540064118D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +143,125 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D90825F2737925A00049E0C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3D908279273799E200049E0C /* Constant.swift */,
+				3D90827D27379A3A00049E0C /* Base */,
+				3D90827C27379A1D00049E0C /* CommonClass */,
+				3D90827B27379A0200049E0C /* Secret */,
+				3D908273273793BC00049E0C /* Extension */,
+				3D9082602737926700049E0C /* Fonts */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3D9082602737926700049E0C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3D908263273792A400049E0C /* Pretendard-Black.otf */,
+				3D908269273792A500049E0C /* Pretendard-Bold.otf */,
+				3D908268273792A500049E0C /* Pretendard-ExtraBold.otf */,
+				3D908261273792A400049E0C /* Pretendard-ExtraLight.otf */,
+				3D908265273792A500049E0C /* Pretendard-Light.otf */,
+				3D908264273792A500049E0C /* Pretendard-Medium.otf */,
+				3D908267273792A500049E0C /* Pretendard-Regular.otf */,
+				3D908262273792A400049E0C /* Pretendard-SemiBold.otf */,
+				3D908266273792A500049E0C /* Pretendard-Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3D908273273793BC00049E0C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D908275273793D400049E0C /* Color.swift */,
+				3D908277273793E200049E0C /* UIFont.swift */,
+				3D90828627379AB900049E0C /* UIViewController.swift */,
+				3D90828827379AC900049E0C /* UINavigationBar.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3D90827B27379A0200049E0C /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+		3D90827C27379A1D00049E0C /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+				3D90828227379A7700049E0C /* IndicatorView.swift */,
+				3D90828427379A8900049E0C /* Device.swift */,
+			);
+			path = CommonClass;
+			sourceTree = "<group>";
+		};
+		3D90827D27379A3A00049E0C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3D90827E27379A5700049E0C /* BaseTabBarController.swift */,
+				3D90828027379A6500049E0C /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3D90828A27379B4800049E0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D9082912737B48100049E0C /* 0_Customs */,
+				3D90828B27379B5E00049E0C /* 1_Login */,
+				3D90828C27379B6600049E0C /* 2_main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D90828B27379B5E00049E0C /* 1_Login */ = {
+			isa = PBXGroup;
+			children = (
+				3D90828D27379BAA00049E0C /* LoginViewController.swift */,
+			);
+			path = 1_Login;
+			sourceTree = "<group>";
+		};
+		3D90828C27379B6600049E0C /* 2_main */ = {
+			isa = PBXGroup;
+			children = (
+				3D90828F27379BC300049E0C /* MainQuizViewController.swift */,
+				3D9082972737D93500049E0C /* SolveQuiz */,
+			);
+			path = 2_main;
+			sourceTree = "<group>";
+		};
+		3D9082912737B48100049E0C /* 0_Customs */ = {
+			isa = PBXGroup;
+			children = (
+				3D9082922737B4AD00049E0C /* LeftImgRightLabelView.swift */,
+				3D90829A2737DAE100049E0C /* QuizAnsView.swift */,
+				3D90829C2737F06A00049E0C /* QuizPopUpView.swift */,
+				3D90829E2737F40200049E0C /* PopUpDarkViewController.swift */,
+			);
+			path = 0_Customs;
+			sourceTree = "<group>";
+		};
+		3D9082942737B5C000049E0C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3D9082952737B5D900049E0C /* MainQuizCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3D9082972737D93500049E0C /* SolveQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				3D9082982737D94B00049E0C /* SolveQuizViewController.swift */,
+			);
+			path = SolveQuiz;
+			sourceTree = "<group>";
+		};
 		3DDED4A9272EDA540064118D = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +287,11 @@
 		3DDED4B4272EDA540064118D /* LatteIsHorse */ = {
 			isa = PBXGroup;
 			children = (
-				3DDED4B5272EDA540064118D /* AppDelegate.swift */,
+				3D90825F2737925A00049E0C /* Configuration */,
+				3D9082942737B5C000049E0C /* Cells */,
+				3D90828A27379B4800049E0C /* View */,
 				3DDED4B7272EDA540064118D /* SceneDelegate.swift */,
+				3DDED4B5272EDA540064118D /* AppDelegate.swift */,
 				3DDED4B9272EDA540064118D /* ViewController.swift */,
 				3DDED4BB272EDA540064118D /* Main.storyboard */,
 				3DDED4BE272EDA560064118D /* Assets.xcassets */,
@@ -164,7 +338,6 @@
 				12A011F2CE1C6031DF4F4DBC /* Pods-LatteIsHorseTests.debug.xcconfig */,
 				E0FACF1A4E1696B010A5DD64 /* Pods-LatteIsHorseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,8 +450,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D90826D273792A500049E0C /* Pretendard-Medium.otf in Resources */,
+				3D908272273792A500049E0C /* Pretendard-Bold.otf in Resources */,
+				3D90826E273792A500049E0C /* Pretendard-Light.otf in Resources */,
 				3DDED4C2272EDA560064118D /* LaunchScreen.storyboard in Resources */,
+				3D90826F273792A500049E0C /* Pretendard-Thin.otf in Resources */,
 				3DDED4BF272EDA560064118D /* Assets.xcassets in Resources */,
+				3D90826B273792A500049E0C /* Pretendard-SemiBold.otf in Resources */,
+				3D908271273792A500049E0C /* Pretendard-ExtraBold.otf in Resources */,
+				3D90826A273792A500049E0C /* Pretendard-ExtraLight.otf in Resources */,
+				3D908270273792A500049E0C /* Pretendard-Regular.otf in Resources */,
+				3D90826C273792A500049E0C /* Pretendard-Black.otf in Resources */,
 				3DDED4BD272EDA540064118D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,9 +589,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9082962737B5D900049E0C /* MainQuizCollectionViewCell.swift in Sources */,
+				3D90827F27379A5700049E0C /* BaseTabBarController.swift in Sources */,
+				3D908278273793E200049E0C /* UIFont.swift in Sources */,
 				3DDED4BA272EDA540064118D /* ViewController.swift in Sources */,
+				3D90828927379AC900049E0C /* UINavigationBar.swift in Sources */,
+				3D90829F2737F40200049E0C /* PopUpDarkViewController.swift in Sources */,
+				3D90828727379AB900049E0C /* UIViewController.swift in Sources */,
+				3D908276273793D400049E0C /* Color.swift in Sources */,
+				3D9082932737B4AD00049E0C /* LeftImgRightLabelView.swift in Sources */,
+				3D90828327379A7700049E0C /* IndicatorView.swift in Sources */,
 				3DDED4B6272EDA540064118D /* AppDelegate.swift in Sources */,
+				3D90828127379A6500049E0C /* BaseViewController.swift in Sources */,
 				3DDED4B8272EDA540064118D /* SceneDelegate.swift in Sources */,
+				3D90829B2737DAE100049E0C /* QuizAnsView.swift in Sources */,
+				3D90829027379BC300049E0C /* MainQuizViewController.swift in Sources */,
+				3D90827A273799E200049E0C /* Constant.swift in Sources */,
+				3D90828E27379BAA00049E0C /* LoginViewController.swift in Sources */,
+				3D90829D2737F06A00049E0C /* QuizPopUpView.swift in Sources */,
+				3D90828527379A8900049E0C /* Device.swift in Sources */,
+				3D9082992737D94B00049E0C /* SolveQuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,16 +791,22 @@
 				DEVELOPMENT_TEAM = GLQQLN3R4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LatteIsHorse/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.LatteIsHorse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -621,16 +826,22 @@
 				DEVELOPMENT_TEAM = GLQQLN3R4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LatteIsHorse/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.LatteIsHorse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
