@@ -45,6 +45,30 @@ class MainQuizViewController: BaseViewController {
         
     }
     
+    let quizBtn = UIButton().then {
+//        $0.setTitle("퀴즈만들기", for: .normal)
+//        $0.setTitleColor(.white, for: .normal)
+//        $0.titleLabel?.font = UIFont.Pretendard(.bold, size: 14)
+        $0.backgroundColor = .btnBlue
+        $0.layer.cornerRadius = 21
+        
+        // 그림자 생성
+        $0.layer.shadowColor = UIColor.black.cgColor
+        $0.layer.shadowOpacity = 0.2
+        $0.layer.shadowOffset = CGSize(width: 0, height: 3)
+        $0.layer.shadowRadius = 4
+    }
+    
+    let btnContent = LeftImgRightLabelView().then {
+        $0.isUserInteractionEnabled = false
+        $0.leftImgView.image = UIImage(named: "iconForBtn")
+        $0.leftImgView.contentMode = .scaleAspectFit
+        $0.rightLabel.text = "  퀴즈만들기"
+        $0.rightLabel.textColor = .white
+        $0.rightLabel.font = UIFont.Pretendard(.bold, size: 14)
+    }
+
+    
     let bottomView = UIView().then {
         $0.backgroundColor = .white
     }
@@ -70,6 +94,8 @@ class MainQuizViewController: BaseViewController {
         initV()
         bindConstraints()
         setCV()
+        
+        quizBtn.addTarget(self, action: #selector(makeTapped), for: .touchUpInside)
     }
 }
 
@@ -84,9 +110,11 @@ extension MainQuizViewController {
     private func initV(){
         self.view.addSubview(scrollView)
         scrollView.addSubview(contentView)
-        _ = [topView, bottomView].map {self.contentView.addSubview($0)}
+        _ = [topView, bottomView,quizBtn].map {self.contentView.addSubview($0)}
         _ = [topTitleLabel, topCV].map {self.topView.addSubview($0)}
         bottomView.addSubview(bottomCV)
+        quizBtn.addSubview(btnContent)
+
     }
     private func bindConstraints(){
         scrollView.snp.makeConstraints {
@@ -120,6 +148,19 @@ extension MainQuizViewController {
             $0.centerX.centerY.equalToSuperview()
             $0.leadingMargin.equalToSuperview().offset(24)
             $0.topMargin.equalToSuperview().offset(16)
+        }
+        quizBtn.snp.makeConstraints {
+            $0.bottom.equalTo(self.view.snp.bottom).offset(-20)
+            $0.centerX.equalToSuperview()
+            $0.width.equalToSuperview().multipliedBy(0.352)
+            $0.height.equalTo(quizBtn.snp.width).multipliedBy(0.318)
+        }
+        btnContent.leftImgView.snp.makeConstraints {
+            $0.height.equalTo(quizBtn).multipliedBy(0.5)
+            $0.width.equalTo(btnContent.leftImgView.snp.height)
+        }
+        btnContent.snp.makeConstraints {
+            $0.centerY.centerX.equalToSuperview()
         }
     }
     private func setCV() {
@@ -201,5 +242,13 @@ extension MainQuizViewController : UICollectionViewDelegateFlowLayout {
         }
         return size
         
+    }
+}
+
+extension MainQuizViewController {
+    @objc func makeTapped(_sender : UIButton) {
+        let nextVC = MakeQuizViewController()
+        nextVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(nextVC, animated: false)
     }
 }
