@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Photos
 
 class MakeQuizViewController: BaseViewController {
+    
+    var albumAuth : Int = Int()
     
     let scrollView = UIScrollView().then {
         $0.showsVerticalScrollIndicator = false
@@ -112,6 +115,35 @@ class MakeQuizViewController: BaseViewController {
         
     }
     
+    let chumbuLabel = UILabel().then {
+        $0.text = "사진 첨부하기"
+        $0.textColor = .black
+        $0.font = UIFont.Pretendard(.bold, size: 14)
+    }
+    
+    let chumbuBtn = UIButton().then {
+        $0.setTitle("", for: .normal)
+        //        $0.tintColor = .chumbuBlue
+        //        let image = UIImage(systemName: "plus.circle.fill")?.withRenderingMode(.alwaysTemplate)
+        $0.setImage(UIImage(named: "add"), for: .normal)
+    }
+    
+    let chumbuLimitLabel = UILabel().then {
+        $0.text = QuizMain.fileLimit
+        $0.textColor = .systemGray2
+        $0.numberOfLines = 0
+        $0.textAlignment  = .center
+        $0.font = UIFont.Pretendard(.regular, size: 12)
+    }
+    
+    let loadIV = UIImageView().then {
+        $0.isUserInteractionEnabled = true
+    }
+    
+    let imgPicker = UIImagePickerController().then {
+        $0.allowsEditing = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -134,6 +166,12 @@ class MakeQuizViewController: BaseViewController {
         self.dismissKeyboardWhenTappedAround()
         
         _ = [textView, ansView1, ansView2, ansView3, ansView4].map {$0.delegate = self}
+        imgPicker.delegate = self
+        
+        chumbuBtn.addTarget(self, action: #selector(chumbuTapped), for: .touchUpInside)
+
+        loadIV.isHidden = true
+        reloadImg(selectedview : loadIV)
     }
     
 }
@@ -159,6 +197,7 @@ extension MakeQuizViewController {
         self.view.addSubview(scrollView)
         scrollView.addSubview(contentView)
         _ = [titleLabel,subLabel,textView,chumbuView,ansLabel,ansView1,ansView2,ansView3,ansView4,makeBtn].map {self.contentView.addSubview($0)}
+        _ = [chumbuLabel,chumbuBtn,chumbuLimitLabel,loadIV].map {self.chumbuView.addSubview($0)}
     }
     private func bindConstraints() {
         scrollView.snp.makeConstraints {
@@ -189,6 +228,23 @@ extension MakeQuizViewController {
             $0.centerX.equalToSuperview()
             $0.leadingMargin.equalTo(16)
             $0.height.equalTo(chumbuView.snp.width).multipliedBy(0.658)
+        }
+        chumbuLabel.snp.makeConstraints {
+            $0.centerX.centerY.equalToSuperview()
+        }
+        chumbuBtn.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalTo(chumbuLabel.snp.top).offset(-20)
+            $0.width.equalToSuperview().multipliedBy(0.152)
+        }
+        chumbuLimitLabel.snp.makeConstraints {
+            $0.top.equalTo(chumbuLabel.snp.bottom).offset(20)
+            $0.centerX.equalToSuperview()
+        }
+        loadIV.snp.makeConstraints {
+            $0.centerX.centerY.equalToSuperview()
+            $0.leadingMargin.equalTo(22.5)
+            $0.topMargin.equalTo(28)
         }
         ansLabel.snp.makeConstraints {
             $0.top.equalTo(chumbuView.snp.bottom).offset(32)
@@ -248,6 +304,68 @@ extension MakeQuizViewController : UITextViewDelegate {
             
         }
     }
+}
 
+extension MakeQuizViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func openAlbum() {
+        self.imgPicker.sourceType = .photoLibrary
+        present(self.imgPicker, animated: false, completion: nil)
+    }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        var newImage: UIImage? = nil
+        if let possibleImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            newImage = possibleImage // 수정된 이미지가 있을 경우
+            loadIV.isHidden = false
+            print("이미지수정")
+        } else if let possibleImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            newImage = possibleImage // 원본 이미지가 있을 경우
+            print("이미지원본")
+            loadIV.isHidden = false
+        } else {
+            loadIV.isHidden = true
+            print("error")
+        }
+        self.loadIV.image = newImage // 받아온 이미지를 update
+        picker.dismiss(animated: true, completion: nil) // picker를 닫아줌
+    }
+    @objc func chumbuTapped(_ sender : UIButton) {
+        checkAlbumPermission()
+        if self.albumAuth == 1 {
+            openAlbum()
+        }
+    }
+}
+
+extension MakeQuizViewController {
+    
+    func checkAlbumPermission(){
+        PHPhotoLibrary.requestAuthorization( { status in
+            switch status{
+            case .authorized:
+                print("Album: 권한 허용")
+                self.albumAuth = 1
+            case .denied:
+                print("Album: 권한 거부")
+                self.albumAuth = 0
+            case .restricted, .notDetermined:
+                print("Album: 선택하지 않음")
+                self.albumAuth = 0
+            default:
+                break
+            }
+        })
+    }
+}
+
+
+extension MakeQuizViewController {
+    func reloadImg(selectedview : UIView) {
+            let touchDown = UITapGestureRecognizer(target:self, action: #selector(didTouchDown))
+            selectedview.addGestureRecognizer(touchDown)
+    }
+    
+    @objc func didTouchDown(gesture : UITapGestureRecognizer){
+        openAlbum()
+    }
 }
