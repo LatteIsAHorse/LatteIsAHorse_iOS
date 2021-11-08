@@ -53,6 +53,12 @@ class SolveQuizViewController: BaseViewController {
         $0.titleLabel?.font = UIFont.Pretendard(.bold, size: 14)
         $0.backgroundColor = .btnBlue
         $0.layer.cornerRadius = 21
+        
+        // 그림자 생성
+        $0.layer.shadowColor = UIColor.black.cgColor
+        $0.layer.shadowOpacity = 0.2
+        $0.layer.shadowOffset = CGSize(width: 0, height: 3)
+        $0.layer.shadowRadius = 4
     }
 
     
