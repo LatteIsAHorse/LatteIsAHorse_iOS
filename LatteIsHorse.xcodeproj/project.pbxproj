@@ -33,6 +33,8 @@
 		3D90829B2737DAE100049E0C /* QuizAnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90829A2737DAE100049E0C /* QuizAnsView.swift */; };
 		3D90829D2737F06A00049E0C /* QuizPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90829C2737F06A00049E0C /* QuizPopUpView.swift */; };
 		3D90829F2737F40200049E0C /* PopUpDarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90829E2737F40200049E0C /* PopUpDarkViewController.swift */; };
+		3D9082A2273832CD00049E0C /* MakeQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9082A1273832CD00049E0C /* MakeQuizViewController.swift */; };
+		3DD69C012739603800699F62 /* QuizMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD69C002739603800699F62 /* QuizMain.swift */; };
 		3DDED4B6272EDA540064118D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4B5272EDA540064118D /* AppDelegate.swift */; };
 		3DDED4B8272EDA540064118D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4B7272EDA540064118D /* SceneDelegate.swift */; };
 		3DDED4BA272EDA540064118D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDED4B9272EDA540064118D /* ViewController.swift */; };
@@ -96,6 +98,8 @@
 		3D90829A2737DAE100049E0C /* QuizAnsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAnsView.swift; sourceTree = "<group>"; };
 		3D90829C2737F06A00049E0C /* QuizPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPopUpView.swift; sourceTree = "<group>"; };
 		3D90829E2737F40200049E0C /* PopUpDarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDarkViewController.swift; sourceTree = "<group>"; };
+		3D9082A1273832CD00049E0C /* MakeQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeQuizViewController.swift; sourceTree = "<group>"; };
+		3DD69C002739603800699F62 /* QuizMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizMain.swift; sourceTree = "<group>"; };
 		3DDED4B2272EDA540064118D /* LatteIsHorse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatteIsHorse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDED4B5272EDA540064118D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DDED4B7272EDA540064118D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 		3D90825F2737925A00049E0C /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				3DD69BFF2739602700699F62 /* Texts */,
 				3D908279273799E200049E0C /* Constant.swift */,
 				3D90827D27379A3A00049E0C /* Base */,
 				3D90827C27379A1D00049E0C /* CommonClass */,
@@ -214,6 +219,7 @@
 				3D9082912737B48100049E0C /* 0_Customs */,
 				3D90828B27379B5E00049E0C /* 1_Login */,
 				3D90828C27379B6600049E0C /* 2_main */,
+				3D9082A0273832AD00049E0C /* 3_makeQuiz */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +266,22 @@
 				3D9082982737D94B00049E0C /* SolveQuizViewController.swift */,
 			);
 			path = SolveQuiz;
+			sourceTree = "<group>";
+		};
+		3D9082A0273832AD00049E0C /* 3_makeQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				3D9082A1273832CD00049E0C /* MakeQuizViewController.swift */,
+			);
+			path = 3_makeQuiz;
+			sourceTree = "<group>";
+		};
+		3DD69BFF2739602700699F62 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				3DD69C002739603800699F62 /* QuizMain.swift */,
+			);
+			path = Texts;
 			sourceTree = "<group>";
 		};
 		3DDED4A9272EDA540064118D = {
@@ -589,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9082A2273832CD00049E0C /* MakeQuizViewController.swift in Sources */,
 				3D9082962737B5D900049E0C /* MainQuizCollectionViewCell.swift in Sources */,
 				3D90827F27379A5700049E0C /* BaseTabBarController.swift in Sources */,
 				3D908278273793E200049E0C /* UIFont.swift in Sources */,
@@ -597,6 +620,7 @@
 				3D90829F2737F40200049E0C /* PopUpDarkViewController.swift in Sources */,
 				3D90828727379AB900049E0C /* UIViewController.swift in Sources */,
 				3D908276273793D400049E0C /* Color.swift in Sources */,
+				3DD69C012739603800699F62 /* QuizMain.swift in Sources */,
 				3D9082932737B4AD00049E0C /* LeftImgRightLabelView.swift in Sources */,
 				3D90828327379A7700049E0C /* IndicatorView.swift in Sources */,
 				3DDED4B6272EDA540064118D /* AppDelegate.swift in Sources */,
