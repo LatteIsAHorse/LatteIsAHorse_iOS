@@ -21,6 +21,7 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setTabBar()
         let actionNavigationController = UINavigationController(rootViewController: mainViewController)
         let networkNavigationController = UINavigationController(rootViewController: networkViewController)
         
@@ -30,5 +31,21 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
         self.viewControllers = [actionNavigationController, networkNavigationController]
         
         self.delegate = self
+    }
+    
+    func setTabBar() {
+        tabBar.isTranslucent = false
+        
+        if #available(iOS 15.0, *) {
+            
+            let tabBarAppearance = UITabBarAppearance()
+            let tabBarItemAppearance = UITabBarItemAppearance()
+            
+            tabBarAppearance.backgroundColor = .white
+            tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
+            tabBar.standardAppearance = tabBarAppearance
+            tabBar.scrollEdgeAppearance = tabBarAppearance
+            
+        }
     }
 }
