@@ -28,4 +28,8 @@ extension UIColor {
     class var mainYellow : UIColor { UIColor(hex: 0xFFD800)}
     class var ansWrong : UIColor { UIColor(hex: 0xF14F31)}
     class var doneBtn : UIColor { UIColor(hex: 0xDADCE5)}
+    class var fontGray : UIColor { UIColor(hex: 0x81848E)}
+    class var D5D6D9 : UIColor { UIColor(hex: 0xD5D6D9)}
+    class var E6E7E8 : UIColor { UIColor(hex: 0xE6E7E8)}
+    class var photoChumbu : UIColor {UIColor(hex: 0xF2F5FF)}
 }
