@@ -25,6 +25,8 @@ class QuizPopUpView: UIView {
     }
     let label2 = UILabel().then {
         $0.textColor = .black
+        $0.numberOfLines = 0
+        $0.textAlignment = .center
         $0.font = UIFont.Pretendard(.regular, size: 14)
     }
     let checkBtn = UIButton().then {
@@ -80,13 +82,14 @@ class QuizPopUpView: UIView {
         label2.snp.makeConstraints {
             $0.top.equalTo(label1.snp.bottom).offset(13)
             $0.centerX.equalToSuperview()
-            $0.leadingMargin.equalTo(47.5)
+            $0.width.equalTo(checkBtn).multipliedBy(0.766)
         }
         checkBtn.snp.makeConstraints {
             $0.top.equalTo(label2.snp.bottom).offset(21.5)
             $0.bottom.equalToSuperview().offset(-21.5)
             $0.centerX.equalToSuperview()
-            $0.width.equalToSuperview().multipliedBy(0.8)
+            //$0.width.equalToSuperview().multipliedBy(0.8)
+            $0.leadingMargin.equalTo(24.5)
             $0.height.equalTo(checkBtn.snp.width).multipliedBy(0.265)
         }
     }

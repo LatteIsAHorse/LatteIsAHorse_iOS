@@ -42,6 +42,7 @@ extension PopupDarkViewController {
 
         popupView.snp.makeConstraints {
             $0.centerX.centerY.equalToSuperview()
+            $0.width.equalToSuperview().multipliedBy(0.653)
         }
        
     }
