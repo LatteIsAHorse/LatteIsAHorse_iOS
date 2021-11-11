@@ -8,11 +8,11 @@
 import UIKit
 
 class MainQuizViewController: BaseViewController {
-
+    
     let screenHeight = UIScreen.main.bounds.size.height
     
     let univName : String = "서울대학교"
-    
+
     var questionArr : [String] = ["샤대문에 얽힌 전설 중 답이 아닌 것은? 이거풀면 고인물 인정이다 ㄹㅇ", "설대 졸업생 중 대머리는 몇명인가?"]
     let scrollView = UIScrollView().then {
         $0.showsVerticalScrollIndicator = true
@@ -46,9 +46,9 @@ class MainQuizViewController: BaseViewController {
     }
     
     let quizBtn = UIButton().then {
-//        $0.setTitle("퀴즈만들기", for: .normal)
-//        $0.setTitleColor(.white, for: .normal)
-//        $0.titleLabel?.font = UIFont.Pretendard(.bold, size: 14)
+        //        $0.setTitle("퀴즈만들기", for: .normal)
+        //        $0.setTitleColor(.white, for: .normal)
+        //        $0.titleLabel?.font = UIFont.Pretendard(.bold, size: 14)
         $0.backgroundColor = .btnBlue
         $0.layer.cornerRadius = 21
         
@@ -67,7 +67,7 @@ class MainQuizViewController: BaseViewController {
         $0.rightLabel.textColor = .white
         $0.rightLabel.font = UIFont.Pretendard(.bold, size: 14)
     }
-
+    
     
     let bottomView = UIView().then {
         $0.backgroundColor = .white
@@ -88,13 +88,13 @@ class MainQuizViewController: BaseViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         setNavi()
         initV()
         bindConstraints()
         setCV()
-        
+        addRightBarButton()
         quizBtn.addTarget(self, action: #selector(makeTapped), for: .touchUpInside)
     }
 }
@@ -107,6 +107,26 @@ extension MainQuizViewController {
         label.text = self.univName
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
     }
+    private func addRightBarButton() {
+        let btnbookmark = UIButton.init(type: .custom)
+        btnbookmark.setImage(UIImage(named: "bookmark"), for: .normal)
+        btnbookmark.addTarget(self, action: #selector(naviTapped(_:)), for: .touchUpInside)
+        btnbookmark.tag = 0
+        
+        let btnalarm = UIButton.init(type: .custom)
+        btnalarm.setImage(UIImage(named: "alarm"), for: .normal)
+        btnalarm.addTarget(self, action: #selector(naviTapped(_:)), for: .touchUpInside)
+        btnalarm.tag = 1
+
+        let stackview = UIStackView.init(arrangedSubviews: [btnbookmark, btnalarm])
+        stackview.distribution = .equalSpacing
+        stackview.axis = .horizontal
+        stackview.alignment = .center
+        stackview.spacing = 8
+        
+        let rightBarButton = UIBarButtonItem(customView: stackview)
+        self.navigationItem.rightBarButtonItem = rightBarButton
+    }
     private func initV(){
         self.view.addSubview(scrollView)
         scrollView.addSubview(contentView)
@@ -114,7 +134,7 @@ extension MainQuizViewController {
         _ = [topTitleLabel, topCV].map {self.topView.addSubview($0)}
         bottomView.addSubview(bottomCV)
         quizBtn.addSubview(btnContent)
-
+        
     }
     private func bindConstraints(){
         scrollView.snp.makeConstraints {
@@ -205,7 +225,7 @@ extension MainQuizViewController : UICollectionViewDelegate, UICollectionViewDat
             secondCell.ddabongView.rightLabel.text = "3000"
             cell = secondCell
         }
-
+        
         return cell
     }
     
@@ -233,12 +253,12 @@ extension MainQuizViewController : UICollectionViewDelegateFlowLayout {
             let c_width = collectionView.frame.width * 0.57
             let c_height = c_width * 1.107
             let c_size = CGSize(width: c_width, height: c_height)
-                size = c_size
+            size = c_size
         } else if collectionView.tag == 1 {
             let c_width = (collectionView.frame.width - 24) / 2
             let c_height = (collectionView.frame.height) / 2
             let c_size = CGSize(width: c_width, height: c_height)
-                size = c_size
+            size = c_size
         }
         return size
         
@@ -251,4 +271,13 @@ extension MainQuizViewController {
         nextVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(nextVC, animated: false)
     }
+    
+    @objc func naviTapped(_ sender : UIButton) {
+        if sender.tag == 0 {
+            let nextVC = BookMarkViewController()
+            nextVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(nextVC, animated: false)
+        }
+    }
+    
 }
