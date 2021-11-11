@@ -11,7 +11,9 @@ class MainQuizCollectionViewCell: UICollectionViewCell {
     
     static let registerID = "\(MainQuizCollectionViewCell.self)"
     
-    let imgView = UIImageView()
+    let imgView = UIImageView().then {
+        $0.contentMode = .scaleAspectFit
+    }
     
     let questionLabel = UILabel().then {
         $0.font = UIFont.Pretendard(.bold, size: 13)
@@ -55,6 +57,7 @@ class MainQuizCollectionViewCell: UICollectionViewCell {
     private func bindConstraints(){
         imgView.snp.makeConstraints {
             $0.top.leading.trailing.equalToSuperview()
+            $0.height.equalTo(imgView.snp.width).multipliedBy(0.6585)
         }
         
         questionLabel.snp.makeConstraints {
