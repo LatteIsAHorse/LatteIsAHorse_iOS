@@ -54,7 +54,16 @@ class TabCollectionViewCell: UICollectionViewCell {
                 //menuLabel.font = isSelected ? .boldSystemFont(ofSize: 14) : .boldSystemFont(ofSize: 14)
                 tabLabel.font = isSelected ?  UIFont.Pretendard(.semiBold, size: 14) : UIFont.Pretendard(.regular, size: 14)
                 tabLabel.textColor = isSelected ? .btnBlue : .lhgray5
-                tabLabel.text = isSelected ? "#\(tabLabel.text!)" : tabLabel.text!.replacingOccurrences(of: "#", with: "")
+                //tabLabel.text = isSelected && tabLabel.text![tabLabel.text!.startIndex] != "#" ? "#\(tabLabel.text!)" : tabLabel.text!.replacingOccurrences(of: "#", with: "")
+                if isSelected && tabLabel.text![tabLabel.text!.startIndex] != "#" {
+                    // 선택아니었다가 되었을때
+                    tabLabel.text = "#\(tabLabel.text!)"
+                } else if isSelected && tabLabel.textColor == .btnBlue  {
+                    // 선택 된거 또 눌렀을때
+                    tabLabel.text = "\(tabLabel.text!)"
+                } else {
+                    tabLabel.text = tabLabel.text!.replacingOccurrences(of: "#", with: "")
+                }
             }
         }
 
