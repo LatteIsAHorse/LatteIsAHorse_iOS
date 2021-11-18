@@ -16,8 +16,7 @@ class PopupDarkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //그냥 알파넣으면 다 투명해짐
-        self.view.backgroundColor = .black.withAlphaComponent(0.7)
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .black.withAlphaComponent(0.8)
         
         
         initVC()
