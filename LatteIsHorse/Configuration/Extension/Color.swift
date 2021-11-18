@@ -32,10 +32,12 @@ extension UIColor {
     class var E6E7E8 : UIColor { UIColor(hex: 0xE6E7E8)}
     class var E9ECF0 : UIColor {UIColor(hex: 0xE9ECF0)}
     class var F2F5F7 : UIColor {UIColor(hex: 0xF2F5F7)}
+    class var F5F6F7 : UIColor {UIColor(hex: 0xF5F6F7)}
     class var photoChumbu : UIColor {UIColor(hex: 0xF2F5FF)}
     class var chumbuBlue : UIColor {UIColor(hex: 0x5084DE)}
     class var lhgary2 : UIColor {UIColor(hex: 0x454545)}
     class var lhgray3 : UIColor {UIColor(hex: 0x828282)}
     class var lhgray4 : UIColor {UIColor(hex: 0x868D8D)}
+    class var lhgray5 : UIColor {UIColor(hex: 0x9A9A9A)}
     class var lhgray6: UIColor {UIColor(hex: 0xD5D6D9)}
 }
