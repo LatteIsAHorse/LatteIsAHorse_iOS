@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
     
     let emailStartBtn = UIButton().then {
         $0.setTitle("이메일로 시작하기", for: .normal)
@@ -27,9 +27,21 @@ class LoginViewController: UIViewController {
         
         emailStartBtn.addTarget(self, action: #selector(emailTapped), for: .touchUpInside)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNavi()
+    }
 }
 
 extension LoginViewController {
+    private func setNavi() {
+        let navigationBar = navigationController?.navigationBar
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.backgroundColor = .white
+        navigationBarAppearance.shadowColor = .clear
+        navigationBar?.scrollEdgeAppearance = navigationBarAppearance
+    }
     private func initV() {
         _ = [emailStartBtn].map {self.view.addSubview($0)}
     }
@@ -43,6 +55,8 @@ extension LoginViewController {
 
 extension LoginViewController {
     @objc func emailTapped(_ sender : UIButton) {
-        self.changeRootViewController(BaseTabBarController())
+        //self.changeRootViewController(BaseTabBarController())
+
+        self.navigationController?.pushViewController(JoinViewController(), animated: true)
     }
 }
