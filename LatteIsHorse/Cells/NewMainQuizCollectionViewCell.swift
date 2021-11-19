@@ -60,6 +60,8 @@ class NewMainQuizCollectionViewCell: UICollectionViewCell {
     private func initV(){
         _ = [imgView,questionLabel,gradeView,seeView].map {self.addSubview($0)}
         self.backgroundColor = .white
+        self.layer.cornerRadius = 8
+        self.layer.borderColor = UIColor.E9E9E9.cgColor
     }
     private func bindConstraints(){
         questionLabel.snp.makeConstraints {
