@@ -28,7 +28,6 @@ class MainQuizViewController: BaseViewController {
         $0.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
         $0.showsHorizontalScrollIndicator = false
         $0.collectionViewLayout = layout
-        $0.translatesAutoresizingMaskIntoConstraints = false
         // tag
         $0.tag = 0
        $0.bounces = false
@@ -36,8 +35,8 @@ class MainQuizViewController: BaseViewController {
     
     let scrollView = UIScrollView().then {
         $0.isPagingEnabled = true
-        $0.showsHorizontalScrollIndicator = false
         $0.bounces = false
+        $0.showsHorizontalScrollIndicator = false
     }
 
 
@@ -90,18 +89,20 @@ extension MainQuizViewController {
         self.scrollView.contentSize.width = self.view.frame.width * CGFloat(tabArr.count)
     }
     private func bindConstraints(){
-        NSLayoutConstraint.activate([
-            tabCV.topAnchor.constraint(equalTo: self.view.topAnchor),
-            tabCV.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            tabCV.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            tabCV.heightAnchor.constraint(equalToConstant: 45)
-        ])
+
+        tabCV.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.leading.equalToSuperview()
+            $0.trailing.equalToSuperview()
+            $0.height.equalTo(45)
+        }
         
         scrollView.snp.makeConstraints {
             $0.top.equalTo(tabCV.snp.bottom)
             $0.leading.trailing.equalToSuperview()
-            $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
-            //$0.width.equalTo(self.view.frame.width * 3)
+            //$0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+            $0.bottom.equalToSuperview()
+            //$0.width.equalTo(self.view.frame.width * 6)
         }
     }
     private func setCV() {
@@ -185,12 +186,12 @@ extension MainQuizViewController : UICollectionViewDelegate, UICollectionViewDat
 
 extension MainQuizViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
+
         // MARK: tag 크기에 맞게 cell size
         let item = tabArr[indexPath.row]
         //UIFont.systemFont(ofSize: 14, weight: .bold)
         //let width = item.size(withAttributes: [NSAttributedString.Key.font : UIFont.Pretendard(.regular, size: 14)]).width + 10
-        let width = collectionView.frame.width / 6
+        let width = (collectionView.frame.width) / 6
         let height = collectionView.frame.height
         return CGSize(width: width, height: height)
     }
@@ -268,5 +269,3 @@ extension MainQuizViewController {
 
     }
 }
-
-
