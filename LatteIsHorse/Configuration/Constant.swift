@@ -8,5 +8,6 @@
 import Alamofire
 
 struct Constant {
-    static let BASE_URL = ""
+    static let BASE_URL = "http://localhost:8080"
+    static var HEADERS : HTTPHeaders = ["AUTH" :  "\(String(describing: Token.jwt))"]
 }

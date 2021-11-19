@@ -33,6 +33,8 @@ class MQContentViewController: UIViewController {
         initV()
         bindConstraints()
         setCV()
+        
+        QuizListDataManager().getQuizList(viewController: self)
     }
 
 }
@@ -75,5 +77,15 @@ extension MQContentViewController : UICollectionViewDelegateFlowLayout {
         let width = collectionView.frame.width - 32
         let height = width * 0.57
         return CGSize(width: width, height: height)
+    }
+}
+
+extension MQContentViewController {
+    func didRetrieveBoxOffice(result : QuizListResponse) {
+        print(result.data)
+    }
+    
+    func failedToRequest(message : String) {
+        self.presentAlert(title: message)
     }
 }
